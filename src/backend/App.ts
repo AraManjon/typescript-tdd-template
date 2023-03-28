@@ -1,20 +1,14 @@
-import { Server } from './Server';
+import { Server } from "./Server";
 
 export class App {
-  server?: Server;
+	server?: Server;
 
-  public async start() {
-    const port = process.env.PORT || '8000';
-    this.server = new Server(port);
-    debugger;
-    return this.server.listen();
-  }
+	async start(): Promise<void> {
+		const port = process.env.PORT ?? "8000";
+		this.server = new Server(port);
+		// eslint-disable-next-line no-debugger
+		debugger;
 
-  /* get httpServer() {
-      return this.server?.getHTTPServer();
-    }
-  
-    async stop() {
-      return this.server?.stop();
-    } */
+		await this.server.listen();
+	}
 }
