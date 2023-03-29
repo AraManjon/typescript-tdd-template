@@ -29,7 +29,7 @@ npm run test
 ```bash
 npm run lint
 ```
-and to fix
+- And to fix
 ```bash
 npm run lint:fix
 ```
