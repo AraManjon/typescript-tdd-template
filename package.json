@@ -5,8 +5,8 @@
   "main": "./src/backend/server.start.ts",
   "scripts": {
     "test": "NODE_ENV=test jest",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
+    "lint": "eslint --ext .ts ./src",
+    "lint:fix": "eslint --fix --ext .ts ./src",
     "dev": "ts-node-dev --inspect --respawn --pretty --transpile-only src/backend/server.start.ts"
   },
   "author": "",

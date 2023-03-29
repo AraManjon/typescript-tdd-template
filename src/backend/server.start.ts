@@ -1,7 +1,7 @@
 import { App } from "./App";
 
 try {
-	new App().start();
+	void new App().start();
 } catch (e) {
 	console.log(e);
 	process.exit(1);

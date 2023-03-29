@@ -5,11 +5,11 @@ class User {
 		this.name = name;
 	}
 
-	sayHello() {
+	sayHello(): string {
 		return `Hello, I am ${this.name}`;
 	}
 
-	toPrimitive() {
+	toPrimitive(): { name: string } {
 		return { name: this.name };
 	}
 }
