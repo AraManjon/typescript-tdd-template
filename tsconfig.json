@@ -8,6 +8,10 @@
     "strict": true,
     "esModuleInterop": true,
     "noEmitOnError": false,
-    "removeComments": true
-  } 
+    "removeComments": true,
+  },
+  "include": [
+    "./src/**/*",
+    "./tests/**/*"
+  ]
 }
