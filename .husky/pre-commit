@@ -1,6 +1,0 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-npx husky add .husky/pre-commit "npm run lint"
-npm run lint
-npm run lint
