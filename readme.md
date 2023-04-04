@@ -1,4 +1,4 @@
-[![💅 Lint](https://github.com/AraManjon/typescript-tdd-template/actions/workflows/lint.yml/badge.svg?event=push)](https://github.com/AraManjon/typescript-tdd-template/actions/workflows/lint.yml)
+[![🏠 Build](https://github.com/AraManjon/typescript-tdd-template/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/AraManjon/typescript-tdd-template/actions/workflows/build.yml)
 ## 👀 How to use
 
 1. Install project dependecies
