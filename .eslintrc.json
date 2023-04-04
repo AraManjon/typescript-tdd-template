@@ -1,6 +1,9 @@
 {
     "parser": "@typescript-eslint/parser",
     "extends": [ "eslint-config-codely/typescript" ],
+    "env": {
+      "node": true
+    },
     "parserOptions": {
       "project": ["./tsconfig.json"]
     },

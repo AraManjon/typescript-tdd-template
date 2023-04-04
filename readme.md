@@ -1,4 +1,4 @@
-
+[![💅 Lint](https://github.com/AraManjon/typescript-tdd-template/actions/workflows/lint.yml/badge.svg?event=push)](https://github.com/AraManjon/typescript-tdd-template/actions/workflows/lint.yml)
 ## 👀 How to use
 
 1. Install project dependecies
