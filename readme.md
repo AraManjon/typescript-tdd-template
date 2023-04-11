@@ -1,13 +1,19 @@
+# TypeScript and TDD template
+
 [![🏠 Build](https://github.com/AraManjon/typescript-tdd-template/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/AraManjon/typescript-tdd-template/actions/workflows/build.yml)
+
+
 ## 👀 How to use
 
-1. Install project dependecies
+1.- Create a new repositoy from [typescript-tdd-template](https://github.com/AraManjon/typescript-tdd-template)
+
+2.- Install project dependecies
 
 ```bash
 npm install
 ```
 
-2. Start server on port 8000 or write port to use in .env file
+3.- Start server on port 8000 or write port to use in .env file
 
 ```bash
 npm run dev
