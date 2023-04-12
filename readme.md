@@ -26,7 +26,7 @@ npm install
 
 To start the server in development mode, run the following script:
 ```bash
-npm run rev
+npm run dev
 ```
 Then, open http://localhost:8000 to access the server.
 
