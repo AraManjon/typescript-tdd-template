@@ -32,5 +32,19 @@ export default class UserModule {
 
 			res.json({ message: "File uploaded successfully" });
 		});
+
+		app.post("/time", (req: Request, res: Response) => {
+			const { username } = req.body;
+
+			const currentTime = new Date().toLocaleString();
+
+			res.setHeader("Cache-Control", "no-cache");
+			res.setHeader("Access-Control-Allow-Origin", "*");
+
+			res.json({
+				username,
+				currentTime,
+			});
+		});
 	}
 }
