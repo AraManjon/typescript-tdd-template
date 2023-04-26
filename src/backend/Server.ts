@@ -2,6 +2,12 @@ import { json, urlencoded } from "body-parser";
 import cors from "cors";
 import express from "express";
 import helmet from "helmet";
+import multer from "multer";
+
+import UserModule from "../user/infrastructure/UserModule";
+
+const app = express();
+const upload = multer({ dest: "uploads/" });
 
 export class Server {
 	private readonly express: express.Express;
@@ -14,6 +20,8 @@ export class Server {
 		this.express.use(cors());
 		this.express.use(json());
 		this.express.use(urlencoded({ extended: true }));
+		this.express.use("/uploads", express.static("uploads"));
+		UserModule.initializeRoutes(app);
 	}
 
 	async listen(): Promise<void> {
