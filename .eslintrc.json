@@ -7,6 +7,7 @@
     "parserOptions": {
       "project": ["./tsconfig.json"]
     },
+    "ignorePatterns": ["dist/**/*"],
     "rules": {
         "@typescript-eslint/no-non-null-assertion": "off",
         "no-console": "warn",

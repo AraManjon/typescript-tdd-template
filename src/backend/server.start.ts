@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { App } from "./App";
 
 try {
