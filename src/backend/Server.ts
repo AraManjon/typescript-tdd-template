@@ -2,12 +2,10 @@ import { json, urlencoded } from "body-parser";
 import cors from "cors";
 import express from "express";
 import helmet from "helmet";
-import multer from "multer";
 
 import UserModule from "../user/infrastructure/UserModule";
 
 const app = express();
-const upload = multer({ dest: "uploads/" });
 
 export class Server {
 	private readonly express: express.Express;
