@@ -7,6 +7,10 @@
     "parserOptions": {
       "project": ["./tsconfig.json"]
     },
+    "plugins": [
+        "@typescript-eslint",
+        "prettier"
+    ],
     "rules": {
         "@typescript-eslint/no-non-null-assertion": "off",
         "no-console": "warn",
@@ -15,7 +19,10 @@
         "@typescript-eslint/no-unsafe-assignment": "off",
         "@typescript-eslint/no-unsafe-call": "off",
         "@typescript-eslint/no-unsafe-member-access": "off",
-        "@typescript-eslint/no-floating-promises": "off"
+        "@typescript-eslint/no-floating-promises": "off", 
+        "padding-line-between-statements": "off",
+        "simple-import-sort/imports": "off",
+        "prettier/prettier": ["error", { "tabWidth": 2, "useTabs": false, "endOfLine": "auto" }]
       },
       "overrides": [
         {

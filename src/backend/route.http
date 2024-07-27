@@ -1,0 +1,62 @@
+
+
+GET http://localhost:8000/v1/api/tasks/home HTTP/1.1
+
+###
+
+GET http://localhost:8000/v1/api/tasks/all HTTP/1.1
+Authorization: Basic YWRtaW46YWRtaW4=
+
+###
+
+GET http://localhost:8000/v1/api/tasks/1 HTTP/1.1
+Authorization: Basic YWRtaW46YWRtaW4=
+
+###
+
+POST http://localhost:8000/v1/api/tasks/ HTTP/1.1
+content-type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
+
+{
+    "name":  "",
+    "content" : "comprar algo"
+}
+
+###
+
+POST http://localhost:8000/v1/api/tasks/ HTTP/1.1
+content-type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
+
+{
+    "name": "reunion",
+    "content" : "ir a la reunion"
+}
+
+###
+
+POST http://localhost:8000/v1/api/tasks/ HTTP/1.1
+content-type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
+
+{
+    "name": "meetting",
+    "content" : "ir a la reunion otra vez"
+}
+
+###
+
+PATCH  http://localhost:8000/v1/api/tasks/1 HTTP/1.1
+content-type: application/json
+Authorization: Basic YWRtaW46YWRtaW4=
+
+{
+    "status": "completed"
+}
+
+###
+DELETE  http://localhost:8000/v1/api/tasks/1 HTTP/1.1
+Authorization: Basic YWRtaW46YWRtaW4=
+
+###

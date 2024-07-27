@@ -1,32 +1,24 @@
-name: 🏠 Build
+name: 🏠 Node REST Service
 
 on: 
   push:
     branches: [master]
-  pull_request:
-    branches: [master]
-    types: [opened, synchronize]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     name: 🏠 Build
-    steps:
-      - name: 🧹 Cancel previus redundant builds
-        uses: styfle/cancel-workflow-action@0.9.1
-        with:
-          access_token: ${{ github.token }}
-          
+    steps: 
       - name: 👍 Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
       
-      - name: ⚙️ Use Node.js 16.x
-        uses: actions/setup-node@v2
+      - name: ⚙️ Use Node.js 20
+        uses: actions/setup-node@v1
         with:
-          node-version: '16.x'
+          node-version: 20
 
       - name: 📥 Install Dependencies
-        run: npm ci
+        run: npm install
 
       - name: 🏠 Build
         run: npm run build
@@ -39,3 +31,11 @@ jobs:
 
       - name: ✅ Test
         run: npm run test
+
+      - name: compilation Typescript
+        uses: icrawl/action-tsc@v1
+        if: success() 
+
+      - name: Exit on Test Failure
+        run: exit 1
+        if: failure()
